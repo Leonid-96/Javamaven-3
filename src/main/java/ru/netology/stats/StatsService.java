@@ -6,7 +6,7 @@ public class StatsService {
     public int sumSales(int[] sales) {
         int sumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            sumMonth += (int) sales[i];
+            sumMonth += sales[i];
         }
         return sumMonth;
     }
@@ -15,7 +15,7 @@ public class StatsService {
     public int averageSales(int[] sales) {
         int averageSumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
-            averageSumMonth += (int) sales[i];
+            averageSumMonth += sales[i];
         }
         return averageSumMonth / sales.length;
     }
