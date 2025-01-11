@@ -21,7 +21,7 @@ public class StatsService {
     }
 
     // Номер месяца с максимальными продажами
-    public int maxSales(int[] sales) {
+    public int maxSales(long[] sales) {
         int maxMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] >= sales[maxMonth]) {
@@ -32,7 +32,7 @@ public class StatsService {
     }
 
     // Номер месяца с минимальными продажами
-    public int minSales(int[] sales) {
+    public int minSales(long[] sales) {
         int minMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] <= sales[minMonth]) {
