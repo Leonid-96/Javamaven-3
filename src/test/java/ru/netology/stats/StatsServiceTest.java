@@ -11,9 +11,9 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 180;
-        int actual = service.sumSales(sales);
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expected = 180;
+        long actual = service.sumSales(sales);
         Assertions.assertEquals(expected, actual);
     }
 
@@ -23,9 +23,9 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 15;
-        int actual = service.averageSales(sales);
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expected = 15;
+        long actual = service.averageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
 
@@ -59,8 +59,8 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5;
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expected = 5;
         long actual = service.lessAverageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
@@ -71,8 +71,8 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 5;
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expected = 5;
         long actual = service.moreAverageSales(sales);
         Assertions.assertEquals(expected, actual);
     }
