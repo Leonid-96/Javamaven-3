@@ -4,7 +4,7 @@ public class StatsService {
 
     // Сумма всех продаж
     public long sumSales(long[] sales) {
-        int sumMonth = 0;
+        long sumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             sumMonth += sales[i];
         }
@@ -13,7 +13,7 @@ public class StatsService {
 
     // Средняя сумма продаж в месяц
     public long averageSales(long[] sales) {
-        int averageSumMonth = 0;
+        long averageSumMonth = 0;
         for (int i = 0; i < sales.length; i++) {
             averageSumMonth += sales[i];
         }
